@@ -1,0 +1,13 @@
+data/
+assets/
+installation/
+figures/
+__pycache__/
+.DS_Store
+.vscode/
+.github/
+.venv/
+07_linear_models/data
+09_time_series_models/data
+/data/
+*.h5
