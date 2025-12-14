@@ -71,10 +71,10 @@ The notebook [updating_conjugate_priors](01_updating_conjugate_priors.ipynb) dem
 
 ### Deterministic and stochastic approximate inference
 
-For most models of practical relevance, it will not be possible to derive the exact posterior distribution analytically and compute expected values for the latent parameters.
+For most models of practical relevance, it will not be possible to derive the exact posterior distribution analytically and compute expected values for the latent parameters(theta), because not every problem has a conjugate prior, so computing the normalizing constant is extremely difficult.
 
 Although for some applications the posterior distribution over unobserved parameters
-will be of interest, most often it is primarily required to evaluate expectations, e.g. to make predictions. In such situations, we can rely on approximate inference:
+will be of interest, most often it is primarily required to evaluate expectations(E[theta|x]), e.g. to make predictions. In such situations, we can rely on approximate inference:
 - **Stochastic techniques** based on Markov Chain Monte Carlo (MCMC) sampling have popularized the use of Bayesian methods across many domains. They generally have the property to converge to the exact result. In practice, sampling methods can be computationally demanding and are often limited to small-scale problems. 
     - [A Conceptual Introduction to Hamiltonian Monte Carlo](https://arxiv.org/pdf/1701.02434.pdf), Michael Betancourt, 2018
     - [The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo](https://arxiv.org/abs/1111.4246), Matthew D. Hoffman, Andrew Gelman, 2011
